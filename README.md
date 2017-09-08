@@ -1,7 +1,7 @@
-SpreeCouponGenerator
+Spree Coupon Generator
 ====================
 
-Introduction goes here.
+Create a promotion as template for one or thousand of new promotions. You can create clones of the master promotion with different codes or upload a CSV with your custom codes.
 
 ## Installation
 
@@ -50,4 +50,4 @@ If you'd like to contribute, please take a look at the
 [instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
 pull request.
 
-Copyright (c) 2017 [name of extension creator], released under the New BSD License
+Copyright (c) 2017 Gonzalo Moreno Caballero, released under the New BSD License
