@@ -1,0 +1,5 @@
+<!-- insert_bottom '.col-md-6:first' -->
+<div class="form-group">
+  <%= label_tag :q_is_master_eq, Spree.t(:promotion_is_master) %>
+  <%= f.check_box :is_master_eq, class: "form-control" %>
+</div>

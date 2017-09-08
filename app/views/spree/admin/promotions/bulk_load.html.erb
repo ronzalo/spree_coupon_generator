@@ -1,0 +1,39 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:bulk_load) %>
+<% end %>
+
+<div class="row">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#automatic_load"><%= Spree.t(:automatic_load) %></a></li>
+      <li><a data-toggle="tab" href="#manual_load"><%= Spree.t(:manual_load) %></a></li>
+    </ul>
+
+    <br>
+
+    <div class="tab-content">
+      <div id="automatic_load" class="tab-pane fade in active">
+        <%= form_tag automatic_load_admin_promotion_path(@object), method: :post, class: 'form-horizontal' do %>
+          <div class="col-md-4">
+            <div class="form-group field">
+              <%= label_tag :number_of_promos, Spree.t(:number_of_promos) %>
+              <%= number_field_tag :number_of_promos, 0, class: 'form-control' %>
+            </div>
+            <%= render :partial => 'spree/admin/shared/new_resource_links' %>
+          </div>
+        <% end %>
+      </div>
+      <div id="manual_load" class="tab-pane fade">
+        <%= form_tag manual_load_admin_promotion_path(@object), method: :post, class: 'form-horizontal', multipart: true do %>
+          <div class="col-md-4">
+            <div class="form-group field">
+              <%= label_tag :file, Spree.t(:import_sub_promotions) %>
+              <%= file_field_tag :file, class: 'form-control' %>
+            </div>
+            <%= render :partial => 'spree/admin/shared/new_resource_links' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

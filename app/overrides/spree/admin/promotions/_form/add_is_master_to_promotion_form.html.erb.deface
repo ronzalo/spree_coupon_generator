@@ -1,0 +1,9 @@
+<!-- insert_bottom '.col-md-3:first' -->
+<% unless f.object.parent %>
+  <%= f.field_container :is_master, class: ['checkbox'] do %>
+    <%= f.label :is_master do %>
+      <%= f.check_box :is_master %>
+      <%= Spree.t(:promotion_is_master) %>
+    <% end %>
+  <% end %>
+<% end %>

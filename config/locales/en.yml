@@ -1,0 +1,13 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  spree:
+    automatic_load_success: "%{quantity} new promotions were created successfully"
+    back_to_master: Back to main promotion
+    bulk_load: Bulk import
+    coupon: Coupon
+    export_sub_promotions: Export coupon list
+    number_of_promos: Number of new promotions
+    promotion_is_master: Is master
+    sub_promotions: Sub promotions

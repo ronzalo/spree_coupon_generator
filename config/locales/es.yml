@@ -1,0 +1,12 @@
+es:
+  spree:
+    automatic_load_success: Se crearon %{quantity} nuevas promociones correctamente
+    back_to_master: Volver a promoción principal
+    bulk_load: Carga masiva
+    coupon: Cupon
+    export_sub_promotions: Exportar lista de cupones
+    import_sub_promotions: Importar lista de cupones
+    manual_load_success: Se cargaron las promociones correctamente
+    number_of_promos: Número de nuevas promociones
+    promotion_is_master: Es master
+    sub_promotions: Sub promociones

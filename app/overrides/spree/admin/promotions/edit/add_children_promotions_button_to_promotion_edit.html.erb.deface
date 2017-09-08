@@ -1,0 +1,13 @@
+<!-- insert_before 'erb[loud]:contains("form_for @promotion")' -->
+<% if @promotion.is_master? %>
+  <% content_for :page_actions do %>
+    <%= button_link_to Spree.t(:sub_promotions), sub_promotions_admin_promotion_path(@promotion), icon: 'list', class: 'btn-primary' %>
+    <%= button_link_to Spree.t(:bulk_load), bulk_load_admin_promotion_path(@promotion), icon: 'cloud-upload', class: 'btn-success' %>
+  <% end %>
+<% end %>
+
+<% if @promotion.parent.present? %>
+  <% content_for :page_actions do %>
+    <%= button_link_to Spree.t(:back_to_master), edit_admin_promotion_path(@promotion.parent), class: 'btn-success' %>
+  <% end %>
+<% end %>
